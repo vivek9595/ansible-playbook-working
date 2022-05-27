@@ -1,0 +1,9 @@
+---
+- hosts: dockerhost
+  become: yes
+
+  tasks:
+    - name: build image
+      command: docker build -t satish /docker
+    - name: run container
+      command: docker run -d -p 8035:8080 satish
