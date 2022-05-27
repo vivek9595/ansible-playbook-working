@@ -1,5 +1,5 @@
 ---
-- hosts: dockerhost
+- hosts: d
   become: yes
 
   tasks:
